@@ -67,3 +67,9 @@ This is a **rules-based Alexa+ simulation**, not a live Alexa integration or a l
 React UI and Vinext routes on a Cloudflare Worker, Cloudflare D1 shared storage, a pure state-transition module, and bearer capabilities stored only as hashes in the database. Client links keep their raw key in the URL fragment and per-tab session storage. Requests send it in an Authorization header. No notebook listing endpoint is exposed. Writes compare the expected revision before committing; guests cannot edit coordinator plans. Production creation has a hashed, time-bucketed IP quota.
 
 MIT licensed. Built with AI assistance; product behavior, implementation, and limitations are documented rather than presented as a live Alexa service.
+
+## Handoff brief and guided story
+
+Each notebook now has a compact brief with **On record**, **Still needs an answer**, and **Next**. Facts link to attributed timeline updates. They are reported facts, not independent verification. **I’ve read this** saves a role-specific reading position on the server; later updates appear as a change list without pretending that reading equals acceptance. New invitations reset the recipient’s reading position.
+
+**Take the two-minute guided demo** starts a fresh fictional notebook and walks through the real state transitions. It deliberately pauses at the handoff: a separate recipient link must accept. The optional **Read brief aloud** uses the browser’s speech synthesis when supported; it is not an Alexa voice or an Alexa device connection.

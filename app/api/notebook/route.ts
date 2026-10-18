@@ -23,7 +23,7 @@ export async function POST(request:Request){try{
  const digest=await hash(auth);const role=roleFor(row,digest,now);if(!role)return json({error:'This link is invalid, revoked, or expired.'},403);
  const name=role==='owner'?JSON.parse(row.state).ownerName:row.recipient_name;const current=JSON.parse(row.state);const view=(state=current,revision=row.revision)=>({id:row.id,state,revision,role,name,expires:row.expires,inviteExpires:row.recipient_expires});if(body.type==='read')return json(view());
  if(body.revision!==row.revision)return json({error:'Someone updated this notebook. The latest version is loaded; please review and try again.',...view()},409);
- if(role==='recipient'&&!['read','chat','accept','decline','visit','waiting','resolve','reopen'].includes(body.type))return json({error:'This link can respond to the handoff, not edit its plan.'},403);
+ if(role==='recipient'&&!['read','acknowledge','chat','accept','decline','visit','waiting','resolve','reopen'].includes(body.type))return json({error:'This link can respond to the handoff, not edit its plan.'},403);
  if(role==='recipient'&&['none','revoked','needs-review'].includes(current.handoff.status))return json({error:'The plan changed. Ask the coordinator for a new handoff link.'},403);
  const state=act(current,body,{role,name},now);let recipientHash=row.recipient_hash,recipientName=row.recipient_name,recipientExpires=row.recipient_expires,inviteKey;
  if(body.type==='invite'){inviteKey=token();recipientHash=await hash(inviteKey);recipientName=state.handoff.name;recipientExpires=Math.min(now+24*3600000,row.expires)}

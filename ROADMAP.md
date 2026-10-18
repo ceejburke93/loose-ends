@@ -18,3 +18,9 @@
 - Decide whether to add a real language model or MCP integration; neither is represented as implemented here.
 
 The primary project alone does not qualify for the Open Source mini-challenge. No AWS mini-challenge entry is claimed without a documented qualifying integration.
+
+## Added for the demo
+- Brief with source links, explicit unanswered questions, and a named next step.
+- Persistent reading positions for each link role, with changes since the last read.
+- Browser read-aloud where supported.
+- Timed guided story using actual shared records and independent recipient acceptance.
