@@ -1,0 +1,12 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {roleFor} from '../lib/access.mjs';
+const row={expires:2000,owner_hash:'owner-digest',recipient_hash:'guest-digest',recipient_expires:1500};
+test('valid coordinator grant',()=>assert.equal(roleFor(row,'owner-digest',1000),'owner'));
+test('valid recipient grant',()=>assert.equal(roleFor(row,'guest-digest',1000),'recipient'));
+test('recipient expires exactly at its expiry',()=>assert.equal(roleFor(row,'guest-digest',1500),null));
+test('recipient expiration does not expire owner',()=>assert.equal(roleFor(row,'owner-digest',1600),'owner'));
+test('whole notebook expiry denies both roles',()=>{assert.equal(roleFor(row,'owner-digest',2000),null);assert.equal(roleFor(row,'guest-digest',2000),null)});
+test('revocation denies old recipient',()=>assert.equal(roleFor({...row,recipient_hash:null},'guest-digest',1000),null));
+test('new recipient key denies former key',()=>assert.equal(roleFor({...row,recipient_hash:'new-digest'},'guest-digest',1000),null));
+test('invalid key and missing notebook deny access',()=>{assert.equal(roleFor(row,'other',1000),null);assert.equal(roleFor(null,'owner-digest',1000),null)});

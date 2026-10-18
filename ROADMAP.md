@@ -1,15 +1,20 @@
-# Before submission
+# Submission status
 
-This repository currently contains an early scripted prototype, not a completed Alexa+ integration.
+## Implemented
+- Conversation and state handling no longer inserts preset facts for every input.
+- Negated completion and unavailable people handled safely.
+- Pending, draft-specific approval with invalidation after plan changes.
+- A genuine server-backed handoff between separate browser clients.
+- Recipient acceptance/decline, attributed outcomes, history, revision checks, expiring/revocable access.
+- Automated state/access regression tests and live API integration checks.
+- Local browser walkthrough of coordinator → recipient → completion → coordinator reload.
 
-- Replace keyword matching with structured conversation handling and actual user-provided facts.
-- Handle negation: “not fixed” must not close a repair; “Alex cannot cover” must not assign Alex.
-- Require a pending message draft before approval, and invalidate approval when the draft changes.
-- Add a technician confirmation state separate from a requested arrival change.
-- Demonstrate a real handoff between household members with shared persistence and access controls.
-- Verify desktop, mobile, keyboard navigation, and reload behavior in a browser.
-- Prepare a public English demo video under three minutes, accurate project description, tool feedback, and observed friction log.
-- Create and complete the Devpost project draft by October 23, 2026 at 3 p.m. Eastern.
-- Ensure judges can run the project without access to the private hosted preview.
+## Still needed for the hackathon
+- Complete the Devpost draft and select the Alexa+ simulated-experience path.
+- Record a public English demo video under three minutes.
+- Write project description, Built With, actual tool feedback, and observed friction log.
+- Validate the final hosted demo with an external person on another device.
+- Recheck remaining accessibility and unusual conversational phrasing.
+- Decide whether to add a real language model or MCP integration; neither is represented as implemented here.
 
-Optional mini-challenges require separately qualifying work. Publishing this repository alone does not qualify for the Open Source mini-challenge.
+The primary project alone does not qualify for the Open Source mini-challenge. No AWS mini-challenge entry is claimed without a documented qualifying integration.
