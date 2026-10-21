@@ -7,11 +7,13 @@
 - A genuine server-backed handoff between separate browser clients.
 - Recipient acceptance/decline, attributed outcomes, history, revision checks, expiring/revocable access.
 - Automated state/access regression tests and live API integration checks.
+- Completed narrated demo with actual app screens, fictional details, captions, and the Yaps Asa preset voice.
+- Published repository test report distinguishing automated role tests from an outside human test.
 - Local browser walkthrough of coordinator → recipient → completion → coordinator reload.
 
 ## Still needed for the hackathon
 - Complete the Devpost draft and select the Alexa+ simulated-experience path.
-- Record a public English demo video under three minutes.
+- Upload the completed 2:57 English demo to the video host required by the submission form, and add its public URL to Devpost. The MP4, captions, and transcript are committed in `docs/demo/`.
 - Write project description, Built With, actual tool feedback, and observed friction log.
 - Validate the final hosted demo with an external person on another device.
 - Recheck remaining accessibility and unusual conversational phrasing.

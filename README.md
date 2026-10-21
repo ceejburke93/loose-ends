@@ -4,6 +4,16 @@ Your household remembers, so you don’t have to explain everything twice.
 
 Loose Ends is a working web simulation for the Alexa+ hackathon track. A coordinator records a household repair, identifies a coverage gap, and creates a private link for another person. Responsibility transfers only when that recipient accepts. A visit does not close the repair: somebody must confirm the result.
 
+## Watch and try it
+
+[Open the public demo](https://loose-ends-household.gladbasil10.chatgpt.site/)
+
+[![Watch the Loose Ends walkthrough](docs/demo/poster.jpg)](https://github.com/ceejburke93/loose-ends/raw/refs/heads/main/docs/demo/loose-ends-demo.mp4)
+
+[Watch or download the video (2:57)](https://github.com/ceejburke93/loose-ends/raw/refs/heads/main/docs/demo/loose-ends-demo.mp4) · [Captions](docs/demo/loose-ends-demo.srt) · [Narration transcript](docs/demo/narration.txt) · [Test report](docs/TEST_REPORT.md)
+
+The walkthrough uses actual app screenshots, fictional household details, and AI narration generated with Yaps's Asa preset voice. It demonstrates separate owner and recipient links on the same computer, rather than independent human usability research. See [demo notes](docs/demo/README.md) for the recording details and audio source.
+
 ## What works
 
 - Structured repair facts and editable times; supported conversational updates use the values actually provided.

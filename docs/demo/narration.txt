@@ -1,0 +1,42 @@
+Loose Ends — narrated walkthrough
+Synthetic narration over actual app screenshots, captured October 20, 2026.
+Fictional household. Automated owner and recipient role test.
+
+00:00:00,000  Loose Ends
+You know that moment when you're leaving the house, but you're still explaining everything? The washer's leaking. Someone's coming to fix it. And somehow, you're still the person keeping track. That's why we built Loose Ends.
+
+00:00:15,320  01  Leave the situation
+Here's Sam. The washer's leaking, the water's off, and the technician is coming between two and four. Sam has to leave at one. One update keeps the whole situation together.
+
+00:00:28,340  02  Notice what is missing
+Alex can help, but only after three. That still leaves an hour uncovered. Loose Ends catches the gap, so a half-finished plan doesn't look like a solved problem.
+
+00:00:40,180  03  Approval is not confirmation
+Sam drafts a request for a later visit and approves it. But notice what stays clear: this demo hasn't sent anything, and the appointment hasn't changed. Approval alone isn't confirmation.
+
+00:00:53,620  04  Update the actual plan
+For our fictional example, Sam records a reply confirming three to four. Now the visit matches Alex's availability. In real life, that confirmation would need to come from the technician.
+
+00:01:07,620  05  Offer the handoff
+Sam offers Alex a handoff through a private link. For now, Sam is still responsible. Sending an invitation doesn't mean someone else has agreed to take over.
+
+00:01:19,740  06  Let the next person catch up
+Alex opens the link. There's a short brief with the facts, what's still waiting, and what to do next. The source buttons lead back to the updates behind it.
+
+00:01:31,160  07  A real yes changes ownership
+Then Alex says, I'll take it. That's when responsibility changes hands. Sam's view updates too. Both people are looking at the same saved story, with their own role and reading progress.
+
+00:01:44,950  08  A visit is not a resolution
+The technician comes. But did the repair actually work? Loose Ends keeps the thread open until someone answers that question. A visit isn't the same thing as a fix.
+
+00:01:57,200  09  Remember what is unfinished
+They're waiting on a replacement part. Alex saves that update, and the next step stays visible. Sam won't have to ask what happened or piece it together from old messages.
+
+00:02:09,660  10  Tie up the loose end
+Once the washer's working, Alex confirms it. Now the thread is tied up. The repair is done, and the history is still there if they need it.
+
+00:02:20,310  11  Pick up where they left off
+When Sam comes back, the brief shows what's changed since the last read. Alex accepted, the visit happened, and the repair is finished. Even after a reload, that shared story is still there.
+
+00:02:34,380  A little less to carry
+This working prototype uses React, TypeScript, Cloudflare Workers, and D one. It's an Alexa Plus web simulation with rules-based conversations. There's no live language model, Alexa device connection, or technician messaging yet. Loose Ends gives the household somewhere to remember, so one person doesn't have to carry it all.

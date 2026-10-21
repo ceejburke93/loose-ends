@@ -1,0 +1,135 @@
+1
+00:00:00,000 --> 00:00:06,409
+You know that moment when you're leaving the house, but you're still
+explaining everything? The washer's
+
+2
+00:00:06,409 --> 00:00:13,218
+leaking. Someone's coming to fix it. And somehow, you're still the
+person keeping track. That's why we
+
+3
+00:00:13,218 --> 00:00:14,420
+built Loose Ends.
+
+4
+00:00:15,320 --> 00:00:22,592
+Here's Sam. The washer's leaking, the water's off, and the technician
+is coming between two and four. Sam
+
+5
+00:00:22,592 --> 00:00:27,440
+has to leave at one. One update keeps the whole situation together.
+
+6
+00:00:28,340 --> 00:00:35,764
+Alex can help, but only after three. That still leaves an hour
+uncovered. Loose Ends catches the gap, so
+
+7
+00:00:35,764 --> 00:00:39,280
+a half-finished plan doesn't look like a solved problem.
+
+8
+00:00:40,180 --> 00:00:48,122
+Sam drafts a request for a later visit and approves it. But notice
+what stays clear: this demo hasn't
+
+9
+00:00:48,122 --> 00:00:52,720
+sent anything, and the appointment hasn't changed. Approval alone
+isn't confirmation.
+
+10
+00:00:53,620 --> 00:01:01,043
+For our fictional example, Sam records a reply confirming three to
+four. Now the visit matches Alex's
+
+11
+00:01:01,043 --> 00:01:06,720
+availability. In real life, that confirmation would need to come from
+the technician.
+
+12
+00:01:07,620 --> 00:01:14,684
+Sam offers Alex a handoff through a private link. For now, Sam is
+still responsible. Sending an
+
+13
+00:01:14,684 --> 00:01:18,840
+invitation doesn't mean someone else has agreed to take over.
+
+14
+00:01:19,740 --> 00:01:26,995
+Alex opens the link. There's a short brief with the facts, what's
+still waiting, and what to do next. The
+
+15
+00:01:26,995 --> 00:01:30,260
+source buttons lead back to the updates behind it.
+
+16
+00:01:31,160 --> 00:01:37,813
+Then Alex says, I'll take it. That's when responsibility changes
+hands. Sam's view updates too. Both
+
+17
+00:01:37,813 --> 00:01:44,050
+people are looking at the same saved story, with their own role and
+reading progress.
+
+18
+00:01:44,950 --> 00:01:51,603
+The technician comes. But did the repair actually work? Loose Ends
+keeps the thread open until someone
+
+19
+00:01:51,603 --> 00:01:56,300
+answers that question. A visit isn't the same thing as a fix.
+
+20
+00:01:57,200 --> 00:02:04,136
+They're waiting on a replacement part. Alex saves that update, and the
+next step stays visible. Sam won't
+
+21
+00:02:04,136 --> 00:02:08,760
+have to ask what happened or piece it together from old messages.
+
+22
+00:02:09,660 --> 00:02:16,521
+Once the washer's working, Alex confirms it. Now the thread is tied
+up. The repair is done, and the
+
+23
+00:02:16,521 --> 00:02:19,410
+history is still there if they need it.
+
+24
+00:02:20,310 --> 00:02:27,095
+When Sam comes back, the brief shows what's changed since the last
+read. Alex accepted, the visit
+
+25
+00:02:27,095 --> 00:02:33,480
+happened, and the repair is finished. Even after a reload, that shared
+story is still there.
+
+26
+00:02:34,380 --> 00:02:41,567
+This working prototype uses React, TypeScript, Cloudflare Workers, and
+D one. It's an Alexa Plus web
+
+27
+00:02:41,567 --> 00:02:47,406
+simulation with rules-based conversations. There's no live language
+model, Alexa device connection, or
+
+28
+00:02:47,406 --> 00:02:54,144
+technician messaging yet. Loose Ends gives the household somewhere to
+remember, so one person doesn't
+
+29
+00:02:54,144 --> 00:02:56,390
+have to carry it all.
